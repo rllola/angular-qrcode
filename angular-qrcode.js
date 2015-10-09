@@ -60,7 +60,7 @@ angular.module('monospaced.qrcode', [])
               }
 
               data = value.replace(trim, '');
-              qr = qrcode(version, errorCorrectionLevel);
+              qr = QRCodeGenerator.qrcode(version, errorCorrectionLevel);
               qr.addData(data);
 
               try {
